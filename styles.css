@@ -1,0 +1,32 @@
+:root {
+  --device-color: #c0c0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: var(--device-color);
+  padding: 2rem;
+  height: 100vh;
+}
+
+#image-display {
+  border: 8px solid #d3d3d3;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+#information,
+#account {
+  background-color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
