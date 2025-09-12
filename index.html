@@ -6,6 +6,12 @@
     <title>Animal Index</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -13,16 +19,31 @@
         <img src="imgs/bulba.png" alt="Bulbasaur Picture" />
       </section>
       <section id="information">
-        <p>Species: Grass</p>
-        <p>Name: Bulbasaur</p>
-        <p>Trait: Large bulb that blooms when it evolves.</p>
+        <p><strong>Species:</strong> Grass</p>
+        <p><strong>Name:</strong> Bulbasaur</p>
+        <p><strong>Trait:</strong> Large bulb that blooms when it evolves.</p>
+      </section>
+      <section id="nav-btns">
+        <p><i class="arrow left"></i></p>
+        <p><i class="arrow right"></i></p>
+        <button type="button">Search</button>
       </section>
       <section id="account">
-        <button type="button">Add</button>
+        <button id="add-btn" type="button">Add</button>
         <button type="button">Edit</button>
         <button type="button">Delete</button>
         <button type="button">Account</button>
       </section>
+      <dialog id="modal">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="species">Species:</label>
+          <input type="text" id="species" name="species" />
+          <label for="trait">Trait:</label>
+          <input type="text" id="species" name="trait" />
+        </form>
+      </dialog>
     </main>
   </body>
 </html>
